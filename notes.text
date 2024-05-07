@@ -1,0 +1,14 @@
+-Apply rotate to each of the hands depenting on what time it is
+  eg
+transform: rotate(20deg);
+but that rotates centrally (not good for our clock)
+
+we want to otate on the very right hand side 
+(middle of clock)
+- need to transform the 'origin'
+eg
+   within .hand {
+    transform-origin: 100%
+   }
+ rotate hands so start at 12o clock
+ - transform: rotate(90deg)
